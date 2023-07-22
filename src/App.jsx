@@ -1,33 +1,26 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "../dist/style.css";
+import { Firstcolumn } from "./components/Firstcolumn";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+      <header className="main-head">
+        <a href="#" className="logo">
+          <h1>galleria.</h1>
         </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <p className="slide-show-btn">start slideshow</p>
+      </header>
+      <main className="main-cont">
+        <div className="column-box">
+          <Firstcolumn maxIndex={5} minIndex={0} />
+        </div>
+        <div className="column-box">
+          <Firstcolumn maxIndex={10} minIndex={5} />
+        </div>
+        <div className="column-box">
+          <Firstcolumn maxIndex={15} minIndex={10} />
+        </div>
+      </main>
     </>
   );
 }

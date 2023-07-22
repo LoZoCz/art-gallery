@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Mona Lisa",
+    "author": "Leonardo da Vinci",
+    "year": "1503-1519",
+    "description": "A half-length portrait of a woman with an enigmatic smile.",
+    "link": "https://en.wikipedia.org/wiki/Mona_Lisa",
+    "painting": "../public/mona_lisa.jpg"
+  },
+  {
+    "id": 2,
+    "name": "The Starry Night",
+    "author": "Vincent van Gogh",
+    "year": "1889",
+    "description": "A view of the night sky over the village of Saint-Rémy-de-Provence.",
+    "link": "https://en.wikipedia.org/wiki/The_Starry_Night",
+    "painting": "../public/starry_night.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Guernica",
+    "author": "Pablo Picasso",
+    "year": "1937",
+    "description": "A large painting depicting the bombing of the Basque town of Guernica during the Spanish Civil War.",
+    "link": "https://en.wikipedia.org/wiki/Guernica",
+    "painting": "../public/guernica.jpg"
+  },
+  {
+    "id": 4,
+    "name": "The Scream",
+    "author": "Edvard Munch",
+    "year": "1893",
+    "description": "A painting of a person with an agonized expression against a blood red sky.",
+    "link": "https://en.wikipedia.org/wiki/The_Scream",
+    "painting": "../public/scream.jpg"
+  },
+  {
+    "id": 5,
+    "name": "The Creation of Adam",
+    "author": "Michelangelo",
+    "year": "1512",
+    "description": "A fresco painting depicting God reaching out to create Adam in the Sistine Chapel.",
+    "link": "https://en.wikipedia.org/wiki/The_Creation_of_Adam",
+    "painting": "../public/creation_of_adam.webp"
+  },
+  {
+    "id": 6,
+    "name": "The Last Supper",
+    "author": "Leonardo da Vinci",
+    "year": "1498-1499",
+    "description": "A mural painting depicting the Last Supper of Jesus Christ with his apostles.",
+    "link": "https://en.wikipedia.org/wiki/The_Last_Supper",
+    "painting": "../public/the_last_supper.jpg"
+  },
+  {
+    "id": 7,
+    "name": "The Venus de Milo",
+    "author": "Unknown",
+    "year": "1st century BC",
+    "description": "A marble statue of a woman without arms.",
+    "link": "https://en.wikipedia.org/wiki/Venus_de_Milo",
+    "painting": "../public/venus_de_milo.jpg"
+  },
+  {
+    "id": 8,
+    "name": "The Thinker",
+    "author": "Auguste Rodin",
+    "year": 1880,
+    "description": "A bronze sculpture of a man sitting in a thoughtful pose.",
+    "link": "https://en.wikipedia.org/wiki/The_Thinker",
+    "painting": "../public/the_thinkser.jpg"
+  },
+  {
+    "id": 9,
+    "name": "The Kiss",
+    "author": "Gustav Klimt",
+    "year": 1908,
+    "description": "A painting of a couple kissing in a gold and red setting.",
+    "link": "https://en.wikipedia.org/wiki/The_Kiss",
+    "painting": "../public/the_kiss.jpg"
+  },
+  {
+    "id": 10,
+    "name": "The Persistence of Memory",
+    "author": "Salvador Dalí",
+    "year": 1931,
+    "description": "A painting of melting clocks.",
+    "link": "https://en.wikipedia.org/wiki/The_Persistence_of_Memory",
+    "painting": "../public/the_persistence_of_memory.jpg"
+  },
+  {
+    "id": 11,
+    "name": "The Water Lilies",
+    "author": "Claude Monet",
+    "year": "1906-1926",
+    "description": "A series of paintings of water lilies in a pond.",
+    "link": "https://en.wikipedia.org/wiki/Water_Lilies",
+    "painting": "../public/water_lillies.jpg"
+  },
+  {
+    "id": 12,
+    "name": "The Birth of Venus",
+    "author": "Sandro Botticelli",
+    "year": "c. 1484-1486",
+    "description": "A painting depicting the goddess Venus emerging from the sea.",
+    "link": "https://en.wikipedia.org/wiki/The_Birth_of_Venus",
+    "painting": "../public/the_birth_of_venus.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Girl with a Pearl Earring",
+    "author": "Johannes Vermeer",
+    "year": "1665",
+    "description": "A painting of a young woman wearing a pearl earring.",
+    "link": "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring",
+    "painting": "../public/girl_with_a_pearl_earring.jpg"
+  },
+  {
+    "id": 14,
+    "name": "The Night Watch",
+    "author": "Rembrandt",
+    "year": "1642",
+    "description": "A large painting of a city guard company by Rembrandt.",
+    "link": "https://en.wikipedia.org/wiki/The_Night_Watch",
+    "painting": "../public/the_night_watch.jpg"
+  },
+  {
+    "id": 15,
+    "name": "American Gothic",
+    "author": "Grant Wood",
+    "year": "1930",
+    "description": "A painting depicting a farmer and his daughter in front of a Gothic-style house.",
+    "link": "https://en.wikipedia.org/wiki/American_Gothic",
+    "painting": "../public/america_gothic.jpg"
+  }
+]
