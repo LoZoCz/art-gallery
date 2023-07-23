@@ -1,17 +1,20 @@
 import "../dist/style.css";
+import { MainGallery } from "./components/MainGallery";
+import { Painting } from "./components/Painting";
 import { Navbar } from "./components/Navbar";
-import { Firstcolumn } from "./components/Firstcolumn";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <main className="main-cont">
-        <Firstcolumn maxIndex={5} minIndex={0} />
-        <Firstcolumn maxIndex={10} minIndex={5} />
-        <Firstcolumn maxIndex={15} minIndex={10} />
-      </main>
-    </>
+    <BrowserRouter>
+      <>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<MainGallery />} />
+          <Route path="/painting" element={<Painting />} />
+        </Routes>
+      </>
+    </BrowserRouter>
   );
 }
 

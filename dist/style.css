@@ -75,4 +75,13 @@ body {
 }
 .main-cont .painting-wrapper:hover img {
   scale: 1.1;
+}
+
+.image-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.image-wrapper img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
