@@ -7,15 +7,12 @@ export const Firstcolumn = ({ maxIndex, minIndex }) => {
       {Data.filter((item) => item.id <= maxIndex && item.id > minIndex).map(
         (item) => {
           return (
-            <div
-              className="painting-wrapper"
-              key={item.id}
-              style={{
-                backgroundImage: `linear-gradient(180deg, rgba(0, 212, 255, 0) 0%, rgba(33, 37, 41, 1) 100%), url('${item.painting}')`,
-              }}
-            >
-              <h3>{item.name}</h3>
-              <p>{item.author}</p>
+            <div className="painting-wrapper" key={item.id}>
+              <img src={item.painting} alt={item.name} />
+              <div className="content-box">
+                <h3>{item.name}</h3>
+                <p>{item.author}</p>
+              </div>
             </div>
           );
         }

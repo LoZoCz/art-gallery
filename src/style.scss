@@ -42,30 +42,40 @@ body {
 }
 
 .main-cont {
+  $gap: 3rem;
   padding: 2rem 8rem;
-  display: grid;
-  grid-template-columns: repeat(3, 33.333%);
-  grid-template-rows: 1fr;
-  gap: 1rem;
+  columns: 5;
+  column-gap: $gap / 2;
 
-  .column-box {
-    display: grid;
-    grid-template-rows: repeat(5, 30rem);
-    gap: 1rem;
+  .painting-wrapper {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    cursor: pointer;
 
-    .painting-wrapper {
+    &::after {
+      content: "";
+      height: 100%;
       width: 100%;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      align-items: end;
-      gap: 1rem;
-      padding: 1rem;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 212, 255, 0) 0%,
+        rgba(33, 37, 41, 1) 100%
+      );
+      position: absolute;
+      inset: 0;
+    }
+
+    .content-box {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      z-index: 2;
 
       h3 {
         margin: 0;
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: $prim-clr-5;
       }
 
@@ -74,6 +84,15 @@ body {
         font-size: 1.25rem;
         color: $prim-clr-5;
       }
+    }
+
+    img {
+      width: 100%;
+      transition: scale ease-in-out 200ms;
+    }
+
+    &:hover img {
+      scale: 1.1;
     }
   }
 }
