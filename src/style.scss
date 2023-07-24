@@ -16,13 +16,27 @@ body {
   font-family: "Abhaya libre", sans-serif;
   font-size: 18px;
   color: $prim-clr-1;
+  margin: 0;
+  height: 100vh;
+  position: relative;
 }
 
 .main-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 4rem;
+  padding: 2rem 4rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 1px;
+    width: calc(100% - 6rem);
+    background-color: $prim-clr-4;
+    position: absolute;
+    bottom: 0;
+    left: 3rem;
+  }
 
   .logo {
     color: $prim-clr-1;
@@ -43,7 +57,7 @@ body {
 
 .main-cont {
   $gap: 3rem;
-  padding: 2rem 8rem;
+  padding: 3rem;
   columns: 5;
   column-gap: $gap / 2;
 
@@ -101,8 +115,161 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  padding: 2rem 3rem;
 
-  img {
-    width: 100%;
+  .image-preview {
+    display: grid;
+    gap: 2rem;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .image-box {
+      width: 50%;
+      height: 80%;
+      position: relative;
+      margin-top: 3rem;
+
+      .view-whole-image {
+        position: absolute;
+        bottom: 1.7rem;
+        left: 2rem;
+        background-color: darken($prim-clr-1, 40%);
+        color: #f8f9fa;
+        border: none;
+        outline: none;
+        font-size: 1.05rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        text-transform: uppercase;
+        padding: 0.5rem;
+        cursor: pointer;
+        transition: background-color ease-in-out 200ms;
+
+        &:hover {
+          background-color: $prim-clr-1;
+        }
+
+        .btn-icon {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .author-info {
+      position: absolute;
+      top: 0;
+      right: 10rem;
+      width: 22rem;
+      aspect-ratio: 1;
+      padding: 2.5rem;
+      background-color: $prim-clr-5;
+      display: grid;
+      justify-content: start;
+      align-items: center;
+
+      .image-name {
+        font-size: 4rem;
+        margin: 0;
+      }
+
+      .author-name {
+        font-size: 1.2rem;
+        margin: 0;
+      }
+    }
+  }
+
+  .image-decription {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 25%;
+    position: relative;
+
+    .date-text {
+      position: absolute;
+      top: 0rem;
+      right: 2rem;
+      font-size: 10rem;
+      color: lighten($prim-clr-4, 10%);
+      z-index: -1;
+      font-weight: 700;
+    }
+
+    .image-desc {
+      width: 100%;
+      font-weight: 700;
+      line-height: 1.2rem;
+      color: $prim-clr-2;
+      letter-spacing: 0.5px;
+    }
+
+    .painting-link {
+      align-self: start;
+      color: $prim-clr-2;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 2rem 3rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid $prim-clr-4;
+
+  .foot-painting-author {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .foot-painting-name {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .arrow-btn-wrapper {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      &[data-active="false"] {
+        pointer-events: none;
+        cursor: not-allowed;
+      }
+
+      .next-btn,
+      .prev-btn {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 2rem;
+        color: $prim-clr-1;
+        cursor: pointer;
+        transition: color ease-in-out 200ms;
+
+        &:hover {
+          color: $prim-clr-2;
+        }
+
+        &[data-active="false"] {
+          color: $prim-clr-3;
+        }
+      }
+    }
   }
 }

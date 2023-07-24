@@ -1,12 +1,12 @@
 import Data from "../data.json";
-import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-export const Firstcolumn = ({ maxIndex, minIndex }) => {
+export const PaintingBox = () => {
   return (
     <>
-      {Data.filter((item) => item.id <= maxIndex && item.id > minIndex).map(
-        (item) => {
-          return (
+      {Data.map((item) => {
+        return (
+          <Link to={item.path} key={item.id}>
             <div className="painting-wrapper" key={item.id}>
               <img src={item.painting} alt={item.name} />
               <div className="content-box">
@@ -14,14 +14,9 @@ export const Firstcolumn = ({ maxIndex, minIndex }) => {
                 <p>{item.author}</p>
               </div>
             </div>
-          );
-        }
-      )}
+          </Link>
+        );
+      })}
     </>
   );
-};
-
-Firstcolumn.propTypes = {
-  maxIndex: PropTypes.number,
-  minIndex: PropTypes.number,
 };

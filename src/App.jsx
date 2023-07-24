@@ -3,6 +3,7 @@ import { MainGallery } from "./components/MainGallery";
 import { Painting } from "./components/Painting";
 import { Navbar } from "./components/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Data from "./data.json";
 
 function App() {
   return (
@@ -11,7 +12,15 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<MainGallery />} />
-          <Route path="/painting" element={<Painting />} />
+          {Data.map((item) => {
+            return (
+              <Route
+                path={item.path}
+                element={<Painting paintingId={item.id} />}
+                key={item.id}
+              />
+            );
+          })}
         </Routes>
       </>
     </BrowserRouter>
