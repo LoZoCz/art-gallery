@@ -5,7 +5,7 @@ import {
   faBackwardFast,
 } from "@fortawesome/free-solid-svg-icons";
 import Data from "../data.json";
-import "../../dist/style.css";
+import "../style.scss";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 export const Painting = ({ paintingId }) => {

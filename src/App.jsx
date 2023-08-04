@@ -1,4 +1,4 @@
-import "../dist/style.css";
+import "./style.scss";
 import { MainGallery } from "./components/MainGallery";
 import { Painting } from "./components/Painting";
 import { Navbar } from "./components/Navbar";
